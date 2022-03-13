@@ -12,4 +12,5 @@ server.use('/tarefa', TarefasRotas);
 
 server.listen(port,()=>{
     console.log('API ONLINE ' + port);
+    console.log(process.env);
 });
