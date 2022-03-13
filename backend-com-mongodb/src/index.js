@@ -4,7 +4,7 @@ const server = express();
 
 const port = process.env.PORT || 3333;
 
-server.use(cors());
+server.use(cors({origin: 'https://deploy-backend-tarefas.herokuapp.com/'}));
 server.use(express.json());
 
 const TarefasRotas = require('./routes/TaskRoutes');
