@@ -12,5 +12,8 @@ server.use('/tarefa', TarefasRotas);
 
 server.listen(port,()=>{
     console.log('API ONLINE ' + port);
+    if(process.env.PORT != 3333){
+        process.env.MONGO_URL;
+    }
     console.log(process.env);
 });
