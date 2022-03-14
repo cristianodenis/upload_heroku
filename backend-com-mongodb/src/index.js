@@ -8,7 +8,7 @@ server.use(cors());
 server.use(express.json());
 
 const TarefasRotas = require('./routes/TaskRoutes');
-server.use('/tarefa', TarefasRotas);
+server.use('/tarefas', TarefasRotas);
 
 server.listen(port,()=>{
     console.log('API ONLINE ' + port);
